@@ -45,6 +45,8 @@ nz-footer {
   text-align: center;
 }
 
+.mobile-trigger { display: none; }
+
 @media screen and (max-width: 768px) {
   .menu {
     position: fixed;
@@ -56,16 +58,21 @@ nz-footer {
 
   .menu-collapsed {
     display: none;
-    transition: collapse 2s ease-in-out;
   }
 
-  @keyframes collapse {
-    from {
-      width: 200px;
-    }
-
-    to {
-      width: 0px;
-    }
+  .mobile-trigger {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00213f;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
   }
 }
