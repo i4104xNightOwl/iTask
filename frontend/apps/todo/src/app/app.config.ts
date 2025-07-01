@@ -12,8 +12,6 @@ import { provideNzIcons } from 'ng-zorro-antd/icon';
 const antDesignIcons = AllIcons as Record<string, IconDefinition>;
 const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])
 
-
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideNzIcons(icons),
